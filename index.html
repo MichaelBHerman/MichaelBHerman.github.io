@@ -4,29 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Michael Herman Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Michael Herman</h1>
-    <h2 id="about-me">About Me</h2>
-        <p>Hello! Welcome to my personal portfolio webpage.  I'm a proud U.S. Air Force Veteran turned Software Developer. I know, a drastic change right?
-        My passion for coding is strong and my hunger to always learn more is even stronger!  
-         </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias excepturi nihil incidunt nam inventore sapiente alias
-         voluptatem deleniti? Nulla nostrum animi voluptates provident eius nam tempore eos veniam inventore atque?</p>
-    <h2>Projects</h2>
-        <p>Here you can view some of my coding projects thus far.  Check out my progression!</p>
-           <!-- insert link to github  -->
-    <h2>Resume</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur praesentium quibusdam ea quaerat eos iste culpa,
-             suscipit ducimus, ullam aliquam odio maxime
-             dignissimos earum quod, qui ipsum veniam eligendi animi!</p>
-    <h2>Contact</h2>
-        <p>Michaelbherman@gmail<br>
-        Phone: 801-541-9594</p>
+    <header>
+        <div class="logo">
+            <img src="images/web-dev-icon-2.jpg" alt="Photo of a developer logo">
+        </div>
+  
+        <nav class="nav">
+            <ul class="nav__list">
+                
+                 <li class="nav__item"><a href="#home" class="nav_link">Home</a></li>
+                 <li class="nav__item"> <a href="#about" class="nav_link">About Me</a></li>
+                <li class="nav__item"><a href="#projects" class="nav_link">My Projects</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav_link">Contacts</a></li>
+                
+            </ul>
+        </nav>
 
-    <!-- create a bottom banner with visual links to my relevent social medias     -->
+    </header>
+    <!-- introduction  -->
+    <section class="intro" id="home">
+        <h1>
+            <strong>Michael Herman</strong>  
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+        <img src = "images/portpic2.jpg" alt="A picture of Michael Herman" class="intro__img">
+    </section>
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="about-h2">About Me</h2>
+            <p><strong>Developer based out of SLC, UT</strong></p>
+            
+            <div class="about-me-body">
+                <p>Hello, and welcome to my portfolio page! I'm a former U.S. Air Force NCO turned software developer.  I know, 
+                    quite the change right?
+                <p>So how did I get here?  My curiousity for understanding how applications work introduced me to the awesome
+                    world of software development!
+                    My passion for learning to code steered me towards making a career change.
+                    I consider myself a "forever student", eager to both build on
+                    my coding foundation and stay in tune with the latest innovations in tech. You could say that I have a hunger for knowledge and a determination
+                    to turn that knowledge into action.</p>
+                <!-- <img src="images/portpic3.jpg" align="right" width="473" height="354"> -->
+            </div>
+            
+            <!-- <img src="images/portpic5.jpg" alt="me" class="about-me__img"> -->
+         </section>
+         
+
+    <section class="my-projects" id="projects">
+        <h2 class="about-h2">My Projects</h2>
+        <p><strong>Here is a selection of various projects i've completed</strong></p>
+
+        <div class="portfolio">
+            <a href="https://github.com/MichaelBHerman/Dinosaurs-VS-Robots1.git" target="_blank" class="portfolio__item">
+                <img src="images/Dinosaur and Robot Drawing.jpg" alt="A Python console turn-based battle game" class="portfolio__img">
+            </a>
+            
+            <a href="https://github.com/MichaelBHerman/MostWanted.git" target="_blank" class="portfolio__item">
+                <img src="images/mostwanted.jpg" alt="A database search program in Javascript" class="portfolio__img">
+            </a>
+            <a href="https://github.com/CMolitoris/RPSLS.git" target="_blank" class="portfolio__item">
+                <img src="images/LIZARDSPOCK.jpg" alt="A ptyhon console game of RPSLS" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__img">
+                <img src="images/placeholder-500x500.jpg" alt ="A placeholder image for future projects" class="portfolio__img">
+            </a>
+        
+            </div>
+
+    </section>
+    <section class="my-contacts" id="contacts">
+        <h2 class="about-h2">Contact</h2>
+        <!-- contacts bar will go here at the bottom with relevant social media links -->
+        <a href="mailto:MichaelBHerman@gmail.com" class="footer__link">MichaelBHerman@gmail.com</a>
+        <p>Phone: 801-541-9594</p>
+
+        <ul class="social-list">
+            
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/MichaelBHerman" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                 </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+
+    </section>
 
 
 </body>
